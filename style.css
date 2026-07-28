@@ -118,3 +118,39 @@ to{
 transform:translateY(-800px);
 }
 }
+.hidden{
+    display:none;
+}
+
+.fadeOut{
+    animation:fadeOut 1s forwards;
+}
+
+.fadeIn{
+    display:block;
+    animation:fadeIn 1.2s forwards;
+}
+
+@keyframes fadeOut{
+    from{
+        opacity:1;
+        transform:scale(1);
+    }
+
+    to{
+        opacity:0;
+        transform:scale(.8);
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:scale(.8);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
