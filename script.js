@@ -37,10 +37,29 @@ function typeWriter() {
     }
 }
 
+const photo1 = document.getElementById("photo1");
+const photo2 = document.getElementById("photo2");
+
 btn.addEventListener("click", () => {
+
     btn.style.display = "none";
-    typeWriter();
-    startHearts();
+
+    photo1.classList.add("fadeOut");
+
+    setTimeout(() => {
+
+        photo1.style.display = "none";
+
+        photo2.classList.remove("hidden");
+
+        photo2.classList.add("fadeIn");
+
+        typeWriter();
+
+        startHearts();
+
+    },1000);
+
 });
 
 function startHearts() {
