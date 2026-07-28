@@ -37,6 +37,7 @@ border:5px solid white;
 box-shadow:0 0 35px #ff69b4;
 margin-bottom:20px;
 animation:float 3s ease-in-out infinite;
+transition: opacity 0.8s ease;    
 }
 
 h1{
